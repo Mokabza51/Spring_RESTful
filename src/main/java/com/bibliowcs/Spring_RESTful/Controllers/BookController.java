@@ -41,9 +41,17 @@ public class BookController {
   public Book update(@PathVariable int id, @RequestBody Book book){
     // getting book
     Book bookToUpdate = bookRespository.findById(id).get();
-    bookToUpdate.setTitle(book.getTitle());
-    bookToUpdate.setAuthor(book.getAuthor());
-    bookToUpdate.setDescription(book.getDescription());
+    
+    if(book.getTitle() != null) {
+    	bookToUpdate.setTitle(book.getTitle());
+    }
+    if (book.getAuthor() != null) {
+    	bookToUpdate.setAuthor(book.getAuthor());
+    }
+    if (book.getAuthor() != null) {
+    	bookToUpdate.setDescription(book.getDescription());
+    }
+  
     return bookRespository.save(bookToUpdate);
   }
 
