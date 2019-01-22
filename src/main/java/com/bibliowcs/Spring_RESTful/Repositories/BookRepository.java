@@ -13,4 +13,3 @@ public interface BookRepository extends JpaRepository <Book, Integer> {
 	List<Book> findByTitleContainingOrDescriptionContaining(String text, String textAgain);
     
 }
-

@@ -59,6 +59,5 @@ public class BookController {
   public boolean delete(@PathVariable int id){
     bookRespository.deleteById(id);
     return true;
-  }
-  
+  } 
 }

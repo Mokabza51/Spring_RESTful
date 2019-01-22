@@ -65,6 +65,5 @@ public class Book {
                 ", author='" + author + '\'' +
                 ", description='" + description + '\'' +
                 '}';
-}
-    
+	}
 }
