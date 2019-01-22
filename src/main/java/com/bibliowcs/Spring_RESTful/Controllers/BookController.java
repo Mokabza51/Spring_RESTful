@@ -48,7 +48,7 @@ public class BookController {
     if (book.getAuthor() != null) {
     	bookToUpdate.setAuthor(book.getAuthor());
     }
-    if (book.getAuthor() != null) {
+    if (book.getDescription() != null) {
     	bookToUpdate.setDescription(book.getDescription());
     }
   
